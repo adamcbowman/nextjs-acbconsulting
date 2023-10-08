@@ -12,7 +12,6 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 
 ## Running Locally
 
-
 ```sh-session
 git clone https://github.com/chronark/chronark.com.git
 cd chronark.com

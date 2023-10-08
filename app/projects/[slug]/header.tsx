@@ -11,9 +11,9 @@ type Props = {
 		repository?: string;
 	};
 
-	views: number;
+	// views: number;
 };
-export const Header: React.FC<Props> = ({ project, views }) => {
+export const Header: React.FC<Props> = ({ project }) => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
 
@@ -62,12 +62,12 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 									: "text-zinc-600 hover:text-zinc-900"
 							} `}
 						>
-							<Eye className="w-5 h-5" />{" "}
-							{Intl.NumberFormat("en-US", { notation: "compact" }).format(
+							{/* <Eye className="w-5 h-5" />{" "} */}
+							{/* {Intl.NumberFormat("en-US", { notation: "compact" }).format(
 								views,
-							)}
+							)} */}
 						</span>
-						<Link target="_blank" href="https://twitter.com/chronark_">
+						{/* <Link target="_blank" href="https://twitter.com/chronark_">
 							<Twitter
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
@@ -84,7 +84,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 										: "text-zinc-600 hover:text-zinc-900"
 								} `}
 							/>
-						</Link>
+						</Link> */}
 					</div>
 
 					<Link

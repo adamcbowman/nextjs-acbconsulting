@@ -1,5 +1,5 @@
 "use client";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Globe } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -18,17 +18,24 @@ const socials = [
 		handle: "adamcbowman",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/adamcbowman",
-		label: "Github",
-		handle: "adamcbowman",
-	},
-	{
 		icon: <Linkedin size={20} />,
 		href: "https://www.linkedin.com/in/adamcbowman1983/",
 		label: "LinkedIn",
 		handle: "adamcbowman1983",
+	},
+	// {
+	// 	icon: <Globe size={20} />,
+	// 	href: "https://adambowman.tech",
+	// 	label: "Website",
+	// 	handle: "adambowman.tech",
+	// }, 
+	{
+		icon: <Github size={20} />,
+		href: "https://github.com/adamcbowman",
+		label: "Github",
+		handle: "adamcbowman",
 	}
+
 ];
 
 export default function Example() {
