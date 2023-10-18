@@ -1,0 +1,30 @@
+---
+title: "Two Birds One Stone Flower Farm"
+date: '2022-06-03'
+description: Custom shopify web app on Google Cloud infrastructure
+published: true
+---
+
+[![logo](./logo.webp)](https://twobirdsonestonefarm.com/)
+
+A while back I worked with [Two Birds One Stone](https://twobirdsonestonefarm.com/) to add a couple text inputs to their shopify theme. We added text inputs for a custom note and signature to be added to flower orders. This was a relatively quick and easy modification to the shopify theme and we were up and running in no time! 
+
+![screenShot](./ScreenShot.png)
+
+Subsequently, Sarah asked if I could add the note/signature information to the packing slip to help with order preparation. Shouldn't be a problem. 
+Upon some investigation, turns out I wasn't able to add custom properties to the packing slip. There are some paid plugins that allow custom packing slip creation, etc... but there must be a way. 
+
+Since the standard Notes property is available on the Packing slip, I had the idea to write a custom private app for this store to take the information from the newly created inputs, and copy the content to the Notes box so that we have access to it on the packing slip. 
+
+To accomplish this, I wrote a NodeJS/Express app that is triggered by the Order Created webhook in shopify. The Node app uses the Shopify API to update the order notes with the handwritten note/signature properties. 
+
+I put a sanitized version of the Node script in this [gist file](https://gist.github.com/adamcbowman/ae98b5664898c4268ca975b548f1c071) 
+
+
+And voila! We were able to solve the problem and deploy it without incurring any significant ongoing costs.
+
+
+Thanks [@twobirdsonestonefarm](https://www.instagram.com/twobirdsonestonefarm/)
+
+
+[Contact me](/contact/) if you need help with custom shopify themes/apps.
